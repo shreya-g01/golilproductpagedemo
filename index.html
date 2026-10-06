@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- All of the tags below are rewritten per product by setMeta() in app.js.
+     PRODUCTION: the CMS renders them server-side from the product record. -->
+<title>Gulf Product Page 2.0 | Gulf Oil Lubricants India (Prototype)</title>
+<meta name="description" id="meta-desc" content="Gulf Product Page 2.0 prototype.">
+<link rel="canonical" id="canonical" href="https://www.example-gulf-domain.in/products">
+<meta property="og:type" content="product">
+<meta property="og:title" id="og-title" content="Gulf Product Page 2.0">
+<meta property="og:description" id="og-desc" content="Gulf Product Page 2.0 prototype.">
+<meta property="og:image" id="og-image" content="https://www.example-gulf-domain.in/assets/og-product-placeholder.png">
+<meta name="robots" content="noindex, nofollow"><!-- prototype only -->
+<link rel="stylesheet" href="style.css">
+
+<!-- JSON-LD. Organization is static; the other four are generated from the product record on every page view.
+     PRODUCTION: CMS templates output these blocks server-side so crawlers and answer engines read them without JavaScript. -->
+<script type="application/ld+json" id="ld-organization">{"@context":"https://schema.org","@type":"Organization","name":"Gulf Oil Lubricants India Limited","url":"https://www.example-gulf-domain.in/","logo":"https://www.example-gulf-domain.in/assets/gulf-logo.png"}</script>
+<script type="application/ld+json" id="ld-product">{}</script>
+<script type="application/ld+json" id="ld-breadcrumb">{}</script>
+<script type="application/ld+json" id="ld-faq">{}</script>
+<script type="application/ld+json" id="ld-article">{}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="protobar" role="region" aria-label="Prototype controls">
+  <div class="wrap">
+    <strong>PROTOTYPE</strong><span class="lbl">Product Page 2.0 · demonstration data</span>
+    <span class="sp"></span>
+    <label class="sr" for="switcher">View another product</label>
+    <select id="switcher" data-change="switch" aria-label="View another product"></select>
+    <button data-act="bands" aria-pressed="true">Band numbers</button>
+    <button data-act="seo">SEO / GEO inspector</button>
+    <button data-act="analytics">Prototype Analytics</button>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#/" aria-label="Gulf Oil Lubricants India – home"><img src="assets/gulf-logo.png" alt="Gulf"></a>
+    <nav class="main-nav" id="mainnav" aria-label="Primary">
+      <a href="#/products">Products</a>
+      <a href="#/industries">Industries</a>
+      <a href="#/applications">Applications</a>
+      <a href="#/services">Services</a>
+      <a href="#/knowledge">Technical</a>
+      <a href="#/about">About Gulf</a>
+      <a href="#/contact">Contact</a>
+    </nav>
+    <form class="hsearch" data-form="search" role="search"><label class="sr" for="hq">Search</label><input id="hq" name="q" type="search" placeholder="Search"><button type="submit" aria-label="Search">🔍</button></form>
+    <a class="btn sm finder-cta" href="#/finder">Product Finder</a>
+    <button class="hamb" data-act="menu" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav">☰</button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><img src="assets/gulf-logo.png" alt="Gulf"><p class="small">Product Page 2.0 – concept prototype for the Gulf Oil Lubricants India website revamp.</p></div>
+      <div><h2>Products</h2><ul id="foot-products"></ul></div>
+      <div><h2>Explore</h2><ul><li><a href="#/applications">Applications</a></li><li><a href="#/industries">Industries</a></li><li><a href="#/knowledge">Technical Knowledge</a></li><li><a href="#/finder">Product Finder</a></li><li><a href="#/compare">Compare Products</a></li></ul></div>
+      <div><h2>Support</h2><ul><li><a href="#/services">Find a Distributor</a></li><li><a href="#/contact">Enquire</a></li><li><a href="#/expert">Talk to a Gulf Expert</a></li></ul></div>
+      <div><h2>Company</h2><ul><li><a href="#/about">About Gulf</a></li><li><a href="#/about">Careers</a></li><li><a href="#/about">News</a></li><li><a href="#/contact">Contact</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>© Gulf Oil Lubricants India Limited. Prototype – not a live website.</span><a href="#/about">Privacy</a><a href="#/about">Terms</a></div>
+    <p class="small" style="margin-top:14px">Prototype / demonstration data. Product names, specifications, approvals, technical values, compatibility and distributor details are illustrative and must be validated against current Gulf technical documentation before production use.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" role="region" aria-label="Next steps"></div>
+<button class="aibtn" data-act="ai">💬 Ask Gulf AI</button>
+<aside class="ai" id="ai" aria-label="Gulf AI Advisor" hidden></aside>
+<div id="modal-root"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
